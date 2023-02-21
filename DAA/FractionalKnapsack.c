@@ -3,7 +3,6 @@ no->        1   2   3   4   5
 Name->      A   B   C   D   E
 weight ->   10  5   3   4   5
 Price ->    20  5   9   2   12
-
 You have a bag of capacity 15kg what items must be chosen for max profit
 */
 
