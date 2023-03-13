@@ -1,0 +1,10 @@
+Q1 -- A sorting method with Big OH compelxity O(nlogn) spends exactly 1 mills to sort 1000 data items.
+Assuming that time T(n) of sorting n items is directly peopotional to nlogn that is T(n) for sorting N items 
+and estimate how long this method will short 1000,000 items.
+
+Q2 -- A Quadratic algo with processing time T(n)= cn^2 spends T(N) seconds for processing
+n = 5000 data items. Assuming that N100 and T(N)=1ms
+
+Q3 -- An Algorithm with time compelxity O(f(n)) and processing time T(n)= cf(n)
+where , f(n)is known function of n, spends 10 sec to process 1000 data items How much time willbe spent 
+to process 100000 data items if f(n)= n and f(n)=n^3 ??
