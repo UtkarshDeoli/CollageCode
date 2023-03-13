@@ -31,7 +31,7 @@ public class VoterCounter {
                 }}
         System.out.println("The Winner is "+party[maxIndex]+" they won with "+max+"Votes");
 
-
+        scr.close();
 
     }
     

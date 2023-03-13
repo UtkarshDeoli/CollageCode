@@ -53,6 +53,7 @@ public class CarSurvey {
             }
             out.println();
         }
+        scr.close();
 
     }
     
