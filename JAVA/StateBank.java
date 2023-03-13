@@ -23,5 +23,6 @@ public class StateBank {
         a1.widraw(500);
         System.out.println();
         a1.display();
+        scr.close();
     }
 }

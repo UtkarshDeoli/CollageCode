@@ -14,5 +14,6 @@ public class Airtel
         TelCall b1 = new TelCall(no, name, calls);
         b1.compute();
         b1.display();
+        scr.close();
     }
 }
