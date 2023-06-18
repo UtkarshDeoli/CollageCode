@@ -1,0 +1,42 @@
+package packageUtkarsh;
+import java.util.*;
+
+class InvalidMessageException extends Exception
+{
+	String err = "";
+	InvalidMessageException(String s)
+	{
+		err = s;
+	}
+	
+	public String toString()
+	{
+		return (err);
+	}
+}
+
+
+
+public class CustomException {
+
+	public static void main(String[] args) {
+
+		String str ="";
+		Scanner scr = new Scanner(System.in);
+		str = scr.nextLine();
+		try {
+			if(str.equalsIgnoreCase("INDIA") )
+			{
+				InvalidMessageException e = new InvalidMessageException("Not india");
+				throw e;
+			}
+		}
+		catch(InvalidMessageException e)
+		{
+			System.out.println(e);
+		}
+		scr.close();
+
+	}
+
+}
