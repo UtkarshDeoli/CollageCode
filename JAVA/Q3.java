@@ -1,6 +1,8 @@
-/*Write a program to return corresponding column title as it appears in an Excel
-sheet for a given number
- */
+package JAVA;
+
+//Write a program to return corresponding column title as it appears in an Excel
+//sheet for a given number
+
 
 import java.util.*;
 public class Q3 {
