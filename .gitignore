@@ -2,3 +2,8 @@
 .vscode/settings.json
 *.class
 MiniProject/twitter.csv
+*.out
+Compiler Design/.vscode/launch.json
+DSA/test
+MiniProject/TwitterModel.sav
+MiniProject/vector.sav

@@ -1,0 +1,2 @@
+Hello world this is a sample text FILE
+int arr[] = new int[100];
