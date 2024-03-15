@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <meta charset="UTF-8">
+
+    <style>
+        body{
+            background-color: #333;
+            color: beige;
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <select name="option" id="from">
+        <option value="0">Inch</option>
+        <option value="1">Foot</option>
+        <option value="2">CentiMeter</option>
+        <option value="3">Meter</option>
+      </select>
+      <select name="option" id="to">
+        <option value="0">Inch</option>
+        <option value="1">Foot</option>
+        <option value="2">CentiMeter</option>
+        <option value="3">Meter</option>
+      </select>
+      <br><br>
+    <label for="inch">Inches:</label>
+    <input type="number" name="Incehs" id="inch">
+    <br>
+
+    <label for="foot">Foot :</label><input type="number" name ="Foot" id="foot">
+    <br>
+    <button onclick="getID()">Convert</button>
+    <button onclick="Reset()">Reset</button>
+</body>
+</html>
