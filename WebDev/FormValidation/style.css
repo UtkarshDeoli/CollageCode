@@ -1,0 +1,36 @@
+.NameValidator{
+    color: red;
+}
+
+.form-container {
+    border: 2px solid wheat;
+    padding: 20px;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form */
+}
+body{
+    background-color: #333;
+}
+form{
+    color: white;
+}
+button:hover{
+    color: red;
+    background-color: rgb(192, 192, 255);
+    height: 50px;
+    width: 150px;
+}
+
+table, tr, th{
+    margin: 30%;    
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+tr:nth-child(even){
+    background-color: #898787;
+}
+tr:nth-child(odd){
+    background-color: #333;
+}

@@ -7,6 +7,7 @@
 [ \n\t]+ {fprintf(yyout, " ");}
 .	 { fprintf(yyout, "%s", yytext); }
 %%
+
 int yywrap(void) 
 { 
 	return 1; 

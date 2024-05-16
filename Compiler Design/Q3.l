@@ -6,9 +6,9 @@ int valid_int=0, valid_float=0;
 %} 
 
 %% 
-^[-+]?[0-9]* valid_int++; 
-^[-+]?[0-9]*[.][0-9]+$ valid_float++; 
-.; 
+[-+]?[0-9]+ valid_int++; 
+[-+]?[0-9]+[.][0-9]+$ valid_float++; 
+. {}; 
 %% 
 
 int yywrap(){
