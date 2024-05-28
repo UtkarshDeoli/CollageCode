@@ -1,16 +1,18 @@
 %{
-#include "y.tab.h"
+#include <stdio.h>
+#include "Q12.tab.h"
 %}
 
 %%
-
-[0-9]+          { yylval.num = atoi(yytext); return NUM; }
-[-+\/*\n]       { return yytext[0]; }
-[ \t]           ; /* ignore whitespace */
-.               ;
-
+[a-zA-Z]+ { return id; }
+[0-9]+ { return num; }
+[-+/*=] { return yytext[0]; }
+[ \t] ;
+[\n] { return 0; }
+. { return yytext[0]; }
 %%
 
-int yywrap(void) {
+int yywrap()
+{
     return 1;
 }

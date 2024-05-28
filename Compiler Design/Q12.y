@@ -1,36 +1,32 @@
 %{
 #include <stdio.h>
+#include "lex.yy.c" 
+void yyerror(char *s);
 %}
-
-%token NUM
+%token num id
 %left '+' '-'
-%left '*' '/'
-
+%left '*' '/' '%'
 %%
-
-input: /* empty */
-     | input line
-     ;
-
-line: expr '\n'     { printf("Result: %d\n", $1); }
-    ;
-
-expr: expr '+' expr   { $$ = $1 + $3; }
-    | expr '-' expr   { $$ = $1 - $3; }
-    | expr '*' expr   { $$ = $1 * $3; }
-    | expr '/' expr   { $$ = $1 / $3; }
-    | '(' expr ')'    { $$ = $2; }
-    | NUM             { $$ = $1; }
-    ;
-
+S:E {printf("Valid arithmetic expression\n"); return 0; }
+|E'='E {printf("Valid arithmetic expression\n"); return 0; }
+E:E'+'E
+|E'-'E
+|E'*'E
+|E'/'E
+|E'%'E
+|'('E')'
+|num
+|id
+;
 %%
-
-int main() {
-    yyparse();
-    return 0;
+int main()
+{
+printf("Enter the expression: ");
+yyparse();
+return 0;
 }
 
-int yyerror(char *msg) {
-    printf("Error: %s\n", msg);
-    return 0;
+void yyerror(char *s)
+{
+  printf("error: %s\n",s);
 }
